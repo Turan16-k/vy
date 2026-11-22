@@ -113,3 +113,12 @@ Ana menüde bir düğüm seçiliyken `F` tuşuna basıldığında **"Dugum islem
 
 * **Gecikmeli Yeniden Sıralama:** Satır veya sütun silindiğinde matrisin aritmetik ortalaması değişir. Ancak kullanıcı silme işlemi yaparken seçili düğümün yeri anlık olarak değişip ekrandan kaymamalıdır. Bu nedenle **yeniden sıralama işlemi silme anında değil, `X` tuşuna basılıp ana menüye dönüldüğünde** yapılmalıdır.
 * **Boş Kalan Düğümün Silinmesi:** Satır veya sütun silme işlemleri sonucunda bir matriste hiç eleman kalmazsa, o matrisi barındıran ana düğüm de **ana bağlı listeden tamamen silinmeli** ve önceki-sonraki düğümler arasındaki bağlantı (pointer) yeniden kurulmalıdır.
+
+İki videonun tamamını baştan sona tekrar kontrol ettim; **videolarda anlatılan tüm zorunlu özellikler, tuş kontrolleri, dosya formatı ve bellek/OOP kuralları önceki listede eksiksiz olarak yer alıyor.**
+
+Unutulan bir kural yok; ancak kodlamaya geçmeden önce videolarda satır arasında geçen **iki küçük detayı** not etmenizde fayda var:
+
+* **Yazılı Ödev Dokümanı Uyarısı (2. Video Sonu):** Hoca, videonun sonunda OOP ve heap kurallarının zaten dokümanda yazdığını ve **videoda bahsedilmeyen olası ek kuralların da yazılı ödev dokümanında belirtileceğini** söylüyor. Videoların yanında verilen PDF/dokümanı da mutlaka kontrol edin.
+* **Kodlamada Karşılaşacağınız İki Kritik Uç Durum:**
+1. **`Q`/`E` Ekleme ve Sıralama:** Videodaki demoda aritmetik ortalamaya göre sıralama henüz eklenmediği için `Q` seçili düğümün tam önüne, `E` tam sonrasına ekliyor. Ödevde liste küçükten büyüğe sıralı olacağından, ekleme sonrası listenin sıralanıp sıralanmayacağını yazılı dokümandan teyit etmek iyi olur.
+2. **Kare Olmayan Matriste Satır–Sütun Değiştirme (`3`):** Videoda sadece "sütun numarası ve satır numarası istesin, yerlerini değiştirsin" deniyor. Satır ve sütun sayısı birbirine eşit olmayan (örneğin `4×6`) bir matriste bu işlemin nasıl davranacağı (sadece ortak elemanların mı değişeceği yoksa uyarı mı verileceği) yine yazılı dokümanda netleştirilmiş olabilir.
